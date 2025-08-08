@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avi Grant | GIS & Photography</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Avi Grant</h1>
+  <p>GIS Master's Graduate | Photographer</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gis">GIS Portfolio</a>
+    <a href="#photo">Photography</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I’m a GIS master's graduate passionate about spatial analysis, mapping, and using geospatial technology to solve real-world problems. Outside of GIS, I capture portaits and concert photography.</p>
+</section>
+
+<section id="gis">
+  <h2>GIS Portfolio</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/gis/map1.jpg" alt="GIS Project 1" />
+      <p>Hurricane flood mapping using VIIRS satellite data.</p>
+    </div>
+    <div class="card">
+      <img src="images/gis/map2.jpg" alt="GIS Project 2" />
+      <p>Glacial extent analysis with Landsat imagery.</p>
+    </div>
+  </div>
+</section>
+
+<section id="photo">
+  <h2>Photography</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/photography/photo1.jpg" alt="Landscape" onclick="openLightbox(this)" />
+    </div>
+    <div class="card">
+      <img src="images/photography/photo2.jpg" alt="Nature" onclick="openLightbox(this)" />
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Avi Grant</p>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged photo" />
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
